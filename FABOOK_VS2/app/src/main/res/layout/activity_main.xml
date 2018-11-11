@@ -1,0 +1,365 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageButton
+        android:id="@+id/image_home"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="550dp"
+        android:background="@null"
+        android:src="@drawable/image_home"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/image_library"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="550dp"
+        android:background="@null"
+        android:src="@drawable/image_library"
+        app:layout_constraintStart_toEndOf="@+id/image_home"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/image_more"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="550dp"
+        android:background="@null"
+        android:src="@drawable/image_more"
+        app:layout_constraintStart_toEndOf="@+id/image_library"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/image_user"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="550dp"
+        android:background="@null"
+        android:src="@drawable/image_user"
+        app:layout_constraintStart_toEndOf="@+id/image_more"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/icon_notification"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="12dp"
+        android:background="@null"
+        android:src="@drawable/icon_notification"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/book_temp"
+        android:layout_width="110dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="50dp"
+        android:background="#f56f"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnReame"
+        android:layout_width="120dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="161dp"
+        android:background="#047ff9"
+        android:text="Read me"
+        app:layout_constraintStart_toEndOf="@+id/book_temp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="8dp"
+        android:background="#cccccc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/book_temp" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="543dp"
+        android:background="#cccccc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="51dp"
+        android:layout_marginTop="2dp"
+        android:text="HOME"
+        android:textSize="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_home" />
+
+    <TextView
+        android:id="@+id/textView_library"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="2dp"
+        android:text="LIBRARY"
+        android:textSize="10dp"
+        app:layout_constraintStart_toEndOf="@+id/textView_home"
+        app:layout_constraintTop_toBottomOf="@+id/image_library" />
+
+    <TextView
+        android:id="@+id/textView_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="2dp"
+        android:text="MORE"
+        android:textSize="10dp"
+        app:layout_constraintStart_toEndOf="@+id/textView_library"
+        app:layout_constraintTop_toBottomOf="@+id/image_more" />
+
+    <TextView
+        android:id="@+id/textView_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="2dp"
+        android:text="USER"
+        android:textSize="10dp"
+        app:layout_constraintStart_toEndOf="@+id/textView_more"
+        app:layout_constraintTop_toBottomOf="@+id/image_user" />
+
+    <TextView
+        android:id="@+id/textView_tieudesach"
+        android:layout_width="191dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="50dp"
+        android:text="Cà phê cùng Tony"
+        android:textSize="22dp"
+        app:layout_constraintStart_toEndOf="@+id/book_temp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <SearchView
+        android:id="@+id/editTextsearch_book"
+        android:layout_width="314dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="10dp"
+        android:queryHint="Search your book"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="352dp"
+        android:layout_height="328dp"
+        android:layout_marginTop="213dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="23dp"
+                android:text="Favorite book"
+                android:textSize="17dp" />
+            <View
+                android:layout_width="260dp"
+                android:layout_height="2dp"
+                android:background="#cccccc" />
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="180dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/tenquyensach2"
+                        android:layout_gravity="center"
+                        android:layout_width="110dp"
+                        android:layout_height="150dp"
+                        android:background="#56aaff" />
+
+                    <ImageButton
+                        android:id="@+id/tenquyensach3"
+                        android:layout_gravity="center"
+                        android:layout_width="110dp"
+                        android:layout_height="150dp"
+                        android:background="#56eaff"
+                        android:paddingLeft="10dp" />
+
+                    <ImageButton
+                        android:id="@+id/tenquyensach4"
+                        android:layout_gravity="center"
+                        android:layout_width="110dp"
+                        android:layout_height="150dp"
+                        android:background="#4C0a5F"
+                        android:paddingLeft="10dp" />
+
+                    <ImageButton
+                        android:id="@+id/tenquyensach5"
+                        android:layout_gravity="center"
+                        android:layout_width="110dp"
+                        android:layout_height="150dp"
+                        android:background="#81BEF7"
+                        android:paddingLeft="10dp" />
+
+                    <ImageButton
+                        android:id="@+id/tenquyensach6"
+                        android:layout_gravity="center"
+                        android:layout_width="110dp"
+                        android:layout_height="150dp"
+                        android:background="#0A2A22"
+                        android:paddingLeft="10dp" />
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="23dp"
+                android:text="Book are read aloud"
+                android:textSize="17dp" />
+            <View
+                android:layout_width="260dp"
+                android:layout_height="2dp"
+                android:background="#cccccc" />
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="180dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/tenquyensach7"
+                        android:layout_gravity="center"
+                        android:layout_width="110dp"
+                        android:layout_height="150dp"
+                        android:background="#56aaff" />
+
+                    <ImageButton
+                        android:id="@+id/tenquyensach8"
+                        android:layout_gravity="center"
+                        android:layout_width="110dp"
+                        android:layout_height="150dp"
+                        android:background="#56eaff"
+                        android:paddingLeft="10dp" />
+
+                    <ImageButton
+                        android:id="@+id/tenquyensach9"
+                        android:layout_gravity="center"
+                        android:layout_width="110dp"
+                        android:layout_height="150dp"
+                        android:background="#4C0a5F"
+                        android:paddingLeft="10dp" />
+
+                    <ImageButton
+                        android:id="@+id/tenquyensach10"
+                        android:layout_gravity="center"
+                        android:layout_width="110dp"
+                        android:layout_height="150dp"
+                        android:background="#81BEF7"
+                        android:paddingLeft="10dp" />
+
+                    <ImageButton
+                        android:id="@+id/tenquyensach11"
+                        android:layout_gravity="center"
+                        android:layout_width="110dp"
+                        android:layout_height="150dp"
+                        android:background="#0A2A22"
+                        android:paddingLeft="10dp" />
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="23dp"
+                android:text="New book"
+                android:textSize="17dp" />
+            <View
+                android:layout_width="260dp"
+                android:layout_height="2dp"
+                android:background="#cccccc" />
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="180dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/tenquyensach12"
+                        android:layout_gravity="center"
+                        android:layout_width="110dp"
+                        android:layout_height="150dp"
+                        android:background="#56aaff" />
+
+                    <ImageButton
+                        android:id="@+id/tenquyensach13"
+                        android:layout_gravity="center"
+                        android:layout_width="110dp"
+                        android:layout_height="150dp"
+                        android:background="#56eaff"
+                        android:paddingLeft="10dp" />
+
+                    <ImageButton
+                        android:id="@+id/tenquyensach14"
+                        android:layout_gravity="center"
+                        android:layout_width="110dp"
+                        android:layout_height="150dp"
+                        android:background="#4C0a5F"
+                        android:paddingLeft="10dp" />
+
+                    <ImageButton
+                        android:id="@+id/tenquyensach15"
+                        android:layout_gravity="center"
+                        android:layout_width="110dp"
+                        android:layout_height="150dp"
+                        android:background="#81BEF7"
+                        android:paddingLeft="10dp" />
+
+                    <ImageButton
+                        android:id="@+id/tenquyensach16"
+                        android:layout_gravity="center"
+                        android:layout_width="110dp"
+                        android:layout_height="150dp"
+                        android:background="#0A2A22"
+                        android:paddingLeft="10dp" />
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
